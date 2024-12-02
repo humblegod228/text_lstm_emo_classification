@@ -1,0 +1,31 @@
+{% extends 'base.html' %} {% block head %}
+<title>Emotion Detector</title>
+<link rel="stylesheet" href="{{ url_for('static',filename='css/main.css') }}" />
+{% endblock %} {% block body %}
+<div class="container">
+  <div class="wrapper">
+    <div class="title">Emotion Detector</div>
+    <div class="text-box">
+      <div class="text">Hey there, welcome to our Emotion Detector !!!</div>
+      <div class="text">
+        Our system can identify emotions like <a>joy</a>, <a>sadness</a>,
+        <a>anger</a>, <a>love</a>, and <a>fear</a> from the given text !!!
+      </div>
+    </div>
+    <div class="image">
+      <img src="./static/img/digital-art.png" height="200px" width="200px" />
+      <img src="./static/img/digital.png" height="200px" width="200px" />
+      <img src="./static/img/emotion-arts.png" height="200px" width="200px" />
+      <img src="./static/img/good-mood.png" height="200px" width="200px" />
+      <img src="./static/img/love.png" height="200px" width="200px" />
+    </div>
+    <div class="text-box">
+      <div class="text">
+        Why are you still waiting?
+        <a href="{{url_for('login')}}"> Log in </a>
+        now to decode the emotions behind written text !!!
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
